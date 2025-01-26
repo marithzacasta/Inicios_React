@@ -1,0 +1,71 @@
+.md-followCard {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+
+.md-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.md-followCard-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.md-followCard-infoUserName {
+    opacity: .6;
+}
+
+.md-followCard-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.md-followCard-button {
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid blue;
+    transition: .3s ease background-color;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.md-followCard-button:hover {
+    opacity: .8;
+}
+
+.md-followCard-text{
+    display: block;
+}
+
+.md-followCard-button.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: white;
+    width: 140px;
+}
+
+.md-followCard-button.is-following:hover {
+    background-color: rgba(250, 70, 70, 0.247);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+}
+
+.md-followCard-button.is-following:hover .md-followCard-text {
+    display: none; /* Oculta "Siguiendo" */
+}
+
+.md-followCard-button.is-following:hover .md-followCard-stopFollow {
+    display: block; /* Muestra "Dejar de seguir" */
+}
+
+.md-followCard-stopFollow {
+    display: none;  /* Oculta "Dejar de seguir" por defecto */
+}
