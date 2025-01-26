@@ -2,9 +2,9 @@ import { useState } from "react"
 // useState es un hook de React que permite manejar el estado dentro de un componente funcional.
 // En este caso, lo usamos para definir si el usuario está o no siguiendo al perfil mostrado.
 
-export function TwitterFollowCrad ({ userName, name }) {
+export function TwitterFollowCrad ({ userName, name, initialIsFollowing }) {
 
-    const [isFollowing, setIsFollowing] = useState(false)
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
     // Aquí usamos useState para declarar un estado llamado isFollowing.
     // El valor inicial es false (el usuario no está siguiendo al principio).
     // setIsFollowing es una función que nos permite cambiar el valor de isFollowing.
